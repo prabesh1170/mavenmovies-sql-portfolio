@@ -116,7 +116,7 @@ Where last_name LIKE "%SON";
 
 -- Find customers with an email ending in .com.
 SELECT * From customer
-Where email Like "%org";
+Where email Like "%.com";
 
 -- Find film titles containing LOVE.
 Select * FROM film
