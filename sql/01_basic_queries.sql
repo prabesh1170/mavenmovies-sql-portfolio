@@ -19,7 +19,7 @@ Select store_id, address_id From store;
 
 -- Find films rated PG.
 Select* From film
-Where rating="PG";
+Where rating='PG';
 
 -- Find customers marked active.
 Select * From customer
@@ -41,11 +41,11 @@ Where amount>5;
 
  -- Find PG-rated films with rental_rate below 3.00.
  Select * From film
- Where rating = "PG" AND rental_rate<3;
+ Where rating = 'PG' AND rental_rate<3;
  
  -- Find films rated G or PG.
  Select * From film
- Where rating = "PG" OR rating="G";
+ Where rating = 'PG' OR rating='G';
  
 -- Find inactive customers.
 Select * From Customer
@@ -108,23 +108,23 @@ Order By payment_date DESC Limit 20;
 
 -- Find films whose titles begin with A.
  Select * From film
- Where title Like "A%";
+ Where title Like 'A%';
 
 -- Find actors whose last name contains SON.
 Select  * From actor
-Where last_name LIKE "%SON";
+Where last_name LIKE '%SON%';
 
 -- Find customers with an email ending in .com.
 SELECT * From customer
-Where email Like "%.com";
+Where email Like '%.com';
 
 -- Find film titles containing LOVE.
 Select * FROM film
-Where title LIKE "%love%";
+Where title LIKE '%love%';
 
 -- Find cities beginning with S.
 Select * From city
-Where city Like "S%";
+Where city Like 'S%';
 
 
 
