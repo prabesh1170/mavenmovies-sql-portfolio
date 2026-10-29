@@ -126,6 +126,28 @@ Where title LIKE '%love%';
 Select * From city
 Where city Like 'S%';
 
+/* NULL handling
+*/
+-- Find customers with no email.
+Select * From Customer
+Where email IS NULL;
+
+-- Find films without a description.
+Select * From film
+Where description IS NULL;
+
+-- Find rentals with a NULL return_date.
+Select * From rental
+Where return_date IS NULL;
+
+-- Find films with no original_language_id.
+Select * From film
+Where original_language_id IS NUll;
+
+-- Find addresses with no postal code.
+Select * From address
+Where address Is null;
+
 
 
 
